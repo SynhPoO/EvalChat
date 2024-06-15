@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Nicolas Chat App</title>
+  </head>
+  <body>
+      <div class="bot-selector">
+          <button class="button bot-selector-button active-bot" id="bot1-selected">Meteo</button>
+          <button class="button bot-selector-button" id="bot2-selected">Blague</button>
+          <button class="button bot-selector-button" id="bot3-selected">Film</button>
+      </div>
+
+      <div class="chat-container">
+          <h2 class="chat-header">Meteo</h2>
+          <div class="chat-messages"></div>
+          <form class="chat-input-form">
+              <input type="text" class="chat-input" required placeholder="Envoyez votre message aupres de Meteo" />
+              <button type="submit" class="button send-button">Envoyer</button>
+          </form>
+      </div>
+      <button class="button clear-chat-button">Clear Chat</button>
+
+      <div class="information-container">
+          <h2>Global Command</h2>
+          <p>!parleztous</p>
+          <h2>Command 1</h2>
+          <p id="command-1">!temp-latitude-longitude</p>
+          <h2>Command 2</h2>
+          <p id="command-2">!precip-latitude-longitude</p>
+          <h2>Command 3</h2>
+          <p id="command-3">!wind-latitude-longitude</p>
+          <h2>Exemple</h2>
+          <p id="command-exemple">!temp-48.8566-2.3522</p>
+      </div>
+      <script type="module" src="JS/main.js"></script>
+  </body>
+</html>
